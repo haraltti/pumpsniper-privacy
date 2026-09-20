@@ -67,6 +67,9 @@
       color: var(--accent);
     }
 
+    footer .current { color: #444; }
+    footer .sep { margin: 0 10px; color: #555; }
+
     main {
       max-width: 720px;
       margin: 0 auto;
@@ -196,11 +199,12 @@
 
     footer {
       border-top: 1px solid var(--border);
-      padding: 24px 40px;
+      padding: 24px;
       text-align: center;
       color: var(--sub);
       font-size: 12px;
       font-family: 'Space Mono', monospace;
+      line-height: 2;
     }
   </style>
 </head>
@@ -355,9 +359,10 @@
   </main>
 
   <footer>
-    <a href="https://haraltti.github.io/">PumpSniper</a> ·
-    <a href="https://haraltti.github.io/pumpsniper-support/">Support</a><br>
-    © 2026 PumpSniper — Harri Heikkilä — All rights reserved
+    <div>
+      <a href="https://haraltti.github.io/">PumpSniper</a><span class="sep">·</span><a href="https://haraltti.github.io/pumpsniper-support/">Support</a><span class="sep">·</span><span class="current" aria-current="page">Privacy</span><span class="sep">·</span><a href="https://x.com/PumpSniperApp">X</a>
+    </div>
+    <div>© 2026 PumpSniper · Made with 💚 in Finland</div>
   </footer>
 
 </body>

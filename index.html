@@ -49,6 +49,24 @@
       font-weight: 400;
     }
 
+    .logo a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .logo a:hover {
+      text-decoration: underline;
+    }
+
+    footer a {
+      color: var(--sub);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: var(--accent);
+    }
+
     main {
       max-width: 720px;
       margin: 0 auto;
@@ -189,7 +207,7 @@
 <body>
 
   <header>
-    <div class="logo">PumpSniper <span>/ privacy</span></div>
+    <div class="logo"><a href="https://haraltti.github.io/">← PumpSniper</a> <span>/ privacy</span></div>
   </header>
 
   <main>
@@ -337,6 +355,8 @@
   </main>
 
   <footer>
+    <a href="https://haraltti.github.io/">PumpSniper</a> ·
+    <a href="https://haraltti.github.io/pumpsniper-support/">Support</a><br>
     © 2026 PumpSniper — Harri Heikkilä — All rights reserved
   </footer>
 
